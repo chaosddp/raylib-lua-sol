@@ -65,10 +65,10 @@ while not WindowShouldClose() do    -- Detect window close button or ESC key
 
             -- Draw four rectangles around selected rectangle
             if (selected[i]) then
-                DrawRectangle(colorsRecs[i].x, colorsRecs[i].y, 100, 10, RAYWHITE)        -- Square top rectangle
-                DrawRectangle(colorsRecs[i].x, colorsRecs[i].y, 10, 100, RAYWHITE)        -- Square left rectangle
-                DrawRectangle(colorsRecs[i].x + 90, colorsRecs[i].y, 10, 100, RAYWHITE)   -- Square right rectangle
-                DrawRectangle(colorsRecs[i].x, colorsRecs[i].y + 90, 100, 10, RAYWHITE)   -- Square bottom rectangle
+                DrawRectangle(math.floor(colorsRecs[i].x), math.floor(colorsRecs[i].y), 100, 10, RAYWHITE)        -- Square top rectangle
+                DrawRectangle(math.floor(colorsRecs[i].x), math.floor(colorsRecs[i].y), 10, 100, RAYWHITE)        -- Square left rectangle
+                DrawRectangle(math.floor(colorsRecs[i].x) + 90, math.floor(colorsRecs[i].y), 10, 100, RAYWHITE)   -- Square right rectangle
+                DrawRectangle(math.floor(colorsRecs[i].x), math.floor(colorsRecs[i].y) + 90, 100, 10, RAYWHITE)   -- Square bottom rectangle
             end
         end
 
